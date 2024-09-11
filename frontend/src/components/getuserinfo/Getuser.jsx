@@ -13,7 +13,7 @@ const Getuser = () => {
 
     const fetchdata = async()=>{
 
-        const response =   await axios.get('http://localhost:5012/home/allusers')
+        const response =   await axios.get(`${window.location.origin}/home/allusers`)
         getdata(response.data.message)
     
 
