@@ -33,7 +33,7 @@ const Getuser = () => {
 
 const deleteuser = async(userid)=>{
 
-  await axios.delete(`https://crud-app-lbz1.onrender.com/home/deleteuser/${userid}`)
+  await axios.delete(`https://localhost:5012/home/deleteuser/${userid}`)
   .then((response)=> getdata(prevuser=>prevuser.filter(item=>item._id !==userid)))
 
 

@@ -38,7 +38,7 @@ password:''
     useEffect(()=>{
 
 
-     axios.get(`https://crud-app-lbz1.onrender.com/home/getuser/${id}`)
+     axios.get(`https://localhost:5012/home/getuser/${id}`)
 
         .then((res)=>{
 
@@ -59,7 +59,7 @@ password:''
 
     const Submitdata=(e)=>{
         e.preventDefault()
-        axios.put(`https://crud-app-lbz1.onrender.com/home/updateuser/${id}`,user)
+        axios.put(`https://localhost:5012/home/updateuser/${id}`,user)
 
         .then((response)=>{
             toast.success("user updated succesfully",{position:"top-center"})
