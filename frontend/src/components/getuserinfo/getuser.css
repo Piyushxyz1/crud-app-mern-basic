@@ -1,0 +1,76 @@
+.user-table{
+
+    width:70%;
+    background: white;
+    border-radius: 8px;
+    margin:50px  auto;
+    padding:50px;
+    box-shadow: 1px  1px 8px rgba(0,0,0,0.70);
+    display: flex;
+flex-direction: column;
+gap:20px
+
+
+
+
+}
+
+
+
+.add-button{
+
+text-decoration: none;
+background-color: #A42153;
+padding:10px;
+width: 70px;
+border-radius: 6px;
+font-size: 1rem;
+color:rgb(255,255,255);
+font-weight: 500;
+
+}
+
+
+.table{
+
+
+    text-align: center;
+}
+
+.delete-button{
+    margin-right: 1rem;
+    padding:5px;
+    border-radius: 4px;
+    border: none;
+    background-color: #A42153;
+    color: rgb(255,255,255);
+    font-weight: 500;
+
+
+
+}
+
+
+.table thead th{
+
+
+   padding:10px
+}
+
+.table tbody  td{
+
+
+    padding:10px
+ }
+ 
+
+ .edit-button{
+
+
+    background-color: lightpink;
+    padding:4px;
+    border-radius: 4px;
+    text-decoration: none;
+    color:black;
+    font-weight: 500;
+ }
