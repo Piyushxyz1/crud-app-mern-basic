@@ -28,7 +28,7 @@ const navigate = useNavigate()
     }
 const submission=async(e)=>{
     e.preventDefault()
-    await axios.post("https://crud-backendd.onrender.com",inputs)
+    await axios.post("https://crud-backendd.onrender.com/home/create",inputs)
 
 
     .then((res)=>{
