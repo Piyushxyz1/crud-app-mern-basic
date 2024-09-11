@@ -38,7 +38,7 @@ password:''
     useEffect(()=>{
 
 
-     axios.get(`${window.location.origin}/home/getuser/${id}`)
+     axios.get(`http://localhost:5012/home/getuser/${id}`)
 
         .then((res)=>{
 
@@ -59,7 +59,7 @@ password:''
 
     const Submitdata=(e)=>{
         e.preventDefault()
-        axios.put(`${window.location.origin}/home/updateuser/${id}`,user)
+        axios.put(`http://localhost:5012/home/updateuser/${id}`,user)
 
         .then((response)=>{
             toast.success("user updated succesfully",{position:"top-center"})
