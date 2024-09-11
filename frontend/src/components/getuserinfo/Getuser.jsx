@@ -13,7 +13,7 @@ const Getuser = () => {
 
     const fetchdata = async()=>{
 
-        const response =   await axios.get('http://localhost:5012/home/allusers')
+        const response =   await axios.get('https://crud-app-lbz1.onrender.com/allusers')
         getdata(response.data.message)
     
 
@@ -33,7 +33,7 @@ const Getuser = () => {
 
 const deleteuser = async(userid)=>{
 
-  await axios.delete(`http://localhost:5012/home/deleteuser/${userid}`)
+  await axios.delete(`https://crud-app-lbz1.onrender.com/home/deleteuser/${userid}`)
   .then((response)=> getdata(prevuser=>prevuser.filter(item=>item._id !==userid)))
 
 
